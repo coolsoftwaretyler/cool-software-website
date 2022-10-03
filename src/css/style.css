@@ -1,0 +1,149 @@
+:root {
+    --white: #fff;
+    --gray-1: #dcdcdc;
+    --gray-2: #626262;
+    --gray-3: #4c4b48;
+    --gray-4: #333;
+    --black: #000;
+    --light-blue: #abdae1;
+    --green: #00dec6;
+    --blue: #14bdeb;
+    --pink: #c67fff;
+    --purple: #7000f8;
+    --red: #ff3061;
+}
+
+html {
+    background-color: var(--gray-4);
+    box-sizing: border-box;
+    color: var(--white);
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+p {
+    line-height: 1.5;
+}
+
+.heading {
+    font-size: 1.953rem;
+    font-weight: 700;
+}
+
+.subheading {
+    font-size: 1.563rem;
+    font-weight: 300;
+}
+
+.bodyheading {
+    font-size: 1.25rem;
+    font-weight: 700;
+}
+
+.bodycopy {
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+.caption {
+    font-size: 0.5rem;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.highlight {
+    color: var(--green);
+}
+
+.container {
+    margin: 0 auto;
+    max-width: 1400px;
+}
+
+nav {
+    align-items: center;
+    display: flex;
+    justify-content: flex-start;
+    padding: 1.5em;
+    
+}
+
+.brand {
+    margin-right: 150px;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul a {
+    color: var(--white);
+    margin-right: 2em;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+nav ul a:hover,
+nav ul a:focus,
+nav ul a:active {
+    color: var(--pink)
+}
+
+.intro {
+    align-items: center;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.intro__text {
+    margin-bottom: 200px;
+    max-width: 600px;
+}
+
+.content {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 150px;
+}
+
+.content h2 {
+    min-width: 100%;
+}
+
+.content > div {
+    flex: 1;
+}
+
+.contact {
+    align-items: center;
+    background: var(--purple);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 2em;
+    margin-bottom: 100px;
+}
+
+.contact h3 {
+    text-align: center;
+}
+
+.buttonlink {
+    border: 2px solid var(--white);
+    color: var(--white);
+    display: block;
+    padding: 0.5em 1em;
+    text-align: center;
+    text-decoration: none;
+}
