@@ -140,10 +140,37 @@ nav ul a:active {
 }
 
 .buttonlink {
-    border: 2px solid var(--white);
+    border: 3px solid var(--white);
     color: var(--white);
     display: block;
     padding: 0.5em 1em;
     text-align: center;
     text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.buttonlink:hover,
+.buttonlink:focus,
+.buttonlink:active {
+    background: var(--white);
+    color: var(--purple);
+}
+
+footer {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+footer a {
+    color: var(--white);
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+footer a:hover,
+footer a:focus,
+footer a:active {
+    color: var(--pink)
 }
