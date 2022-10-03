@@ -66,13 +66,14 @@ p {
 .container {
     margin: 0 auto;
     max-width: 1400px;
+    padding: 0 1em;
 }
 
 nav {
     align-items: center;
     display: flex;
     justify-content: flex-start;
-    padding: 1.5em;
+    padding: 1.5em 0;
     
 }
 
@@ -100,29 +101,45 @@ nav ul a:active {
     color: var(--pink)
 }
 
+.hamburger {
+    display: none;
+}
+
+.close {
+    display: none;
+}
+
 .intro {
     align-items: center;
     display: flex;
+    flex-wrap: wrap;
     justify-content: flex-start;
 }
 
+.intro img {
+    max-width: 100%;
+}
+
 .intro__text {
-    margin-bottom: 200px;
     max-width: 600px;
+    margin-bottom: 2rem;
 }
 
 .content {
     display: flex;
     flex-wrap: wrap;
-    margin-bottom: 150px;
+    gap: 0.83em;
+    margin-bottom: 2rem;
 }
 
 .content h2 {
     min-width: 100%;
+    margin: 0;
 }
 
 .content > div {
     flex: 1;
+    min-width: 300px;
 }
 
 .contact {
@@ -132,10 +149,11 @@ nav ul a:active {
     flex-direction: column;
     justify-content: center;
     padding: 2em;
-    margin-bottom: 100px;
+    margin-bottom: 2rem;
 }
 
 .contact h3 {
+    margin-top: 0;
     text-align: center;
 }
 
@@ -162,9 +180,14 @@ footer {
     justify-content: space-between;
 }
 
+footer p {
+    text-align: center;
+}
+
 
 footer a {
     color: var(--white);
+    text-align: center;
     text-decoration: none;
     transition: color 0.3s ease;
 }
@@ -173,4 +196,66 @@ footer a:hover,
 footer a:focus,
 footer a:active {
     color: var(--pink)
+}
+
+@media (max-width: 768px) {
+    .hamburger {
+        align-self: flex-start;
+        background-color: transparent;
+        border: none;
+        display: block;
+        margin-left: auto;
+    }
+
+    .hamburger rect {
+        fill: var(--light-blue);
+    }
+
+    .close {
+        background-color: transparent;
+        border: none;
+        display: block;
+        position: absolute;
+        top: 1.5rem;
+        right: 1rem;
+    }
+
+    .close svg {
+        fill: var(--light-blue);
+        stroke: var(--light-blue);
+    }
+
+    #navMenu {
+        align-items: center;
+        background-color: var(--gray-4);
+        box-sizing: border-box;
+        flex-direction: column;
+        justify-content: flex-start;
+        padding: 2em;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100vh;
+        transform: translateX(-100%);
+        transition: transform 0.2s ease-out;
+    }
+
+    #navMenu.active {
+        transform: translateX(0);
+    }
+
+    nav ul {
+        align-items: center;
+        flex-direction: column;
+        justify-content: flex-start;
+    }
+
+    nav ul a {
+        display: block;
+        margin-right: 0;
+        margin-bottom: 1em;
+    }
+
+
 }
