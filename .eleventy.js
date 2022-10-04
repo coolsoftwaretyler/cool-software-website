@@ -1,7 +1,10 @@
+const syntaxHighlight = require("@11ty/eleventy-plugin-syntaxhighlight");
+
 module.exports = function (eleventyConfig) {
   eleventyConfig.addPassthroughCopy("src/fonts");
   eleventyConfig.addPassthroughCopy("src/img");
   eleventyConfig.addPassthroughCopy("src/css");
+  eleventyConfig.addPassthroughCopy("src/js");
 
   eleventyConfig.addCollection("post", function (collection) {
     let pages = collection.getFilteredByTag("post");
@@ -9,6 +12,12 @@ module.exports = function (eleventyConfig) {
       return b.date - a.date;
     });
   });
+
+  eleventyConfig.addLiquidFilter("date", function (date) {
+    return new Date(date).toISOString().split("T")[0];
+  });
+
+  eleventyConfig.addPlugin(syntaxHighlight);
 
   return {
     dir: {

@@ -25,7 +25,7 @@ I think I can Base64 encode the input url and return it appended to `http://tiny
 
 Here's how I would express that in JavaScript:
 
-```
+```js
 var encode = function(longUrl) {
     let encodedUrl = Buffer.from(longUrl, 'binary').toString('base64');
     return "http://tinyurl.com/" + encodedUrl;

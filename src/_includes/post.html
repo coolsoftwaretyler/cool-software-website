@@ -1,33 +1,98 @@
-<article
-  class="post h-entry"
-  itemscope
-  itemtype="http://schema.org/BlogPosting"
->
-  <header class="post-header">
-    <h1 class="post-title p-name" itemprop="name headline">{{ title }}</h1>
-    <p class="post-meta">
-      <time
-        class="dt-published"
-        datetime="{{ date | date_to_xmlschema }}"
-        itemprop="datePublished"
-      >
-        {%- assign date_format = default: "%b %-d, %Y" -%} {{ date | date:
-        date_format }}
-      </time>
-      {%- if page.author -%} •
-      <span itemprop="author" itemscope itemtype="http://schema.org/Person"
-        ><span class="p-author h-card" itemprop="name">{{ author }}</span></span
-      >
-      {%- endif -%}
-    </p>
-  </header>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cool Software</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/css/style.css" />
+    <link rel="stylesheet" href="/css/syntax-highlight.css" />
+    <script src="/js/main.js" defer></script>
+  </head>
+  <body>
+    <div class="container">
+      <nav>
+        <a href="/" class="brand">
+          <img src="/img/logo--state1.svg" width="150" height="auto" />
+        </a>
+        <div id="navMenu">
+          <ul>
+            <li><a href="/">Home</a></li>
+            <li><a href="/blog">Blog</a></li>
+            <li><a href="/contact">Contact</a></li>
+          </ul>
+          <button class="close">
+            <svg height="24" width="24">
+              <polyline stroke-width="2" points="0,0 24,24" />
+              <polyline stroke-width="2" points="0,24 24,0" />
+            </svg>
+          </button>
+        </div>
+        <button class="hamburger">
+          <svg viewBox="0 0 100 80" width="24" height="24">
+            <rect width="100" height="10"></rect>
+            <rect y="30" width="100" height="10"></rect>
+            <rect y="60" width="100" height="10"></rect>
+          </svg>
+        </button>
+      </nav>
+      <main class="blogpost">
+        <article
+          class="post h-entry"
+          itemscope
+          itemtype="http://schema.org/BlogPosting"
+        >
+          <header class="post-header">
+            <h1 class="post-title p-name" itemprop="name headline">
+              {{ title }}
+            </h1>
+            <p class="post-meta">
+              {%- if page.author -%} •
+              <span
+                itemprop="author"
+                itemscope
+                itemtype="http://schema.org/Person"
+                ><span class="p-author h-card" itemprop="name"
+                  >{{ author }}</span
+                ></span
+              >
+              {%- endif -%}
+            </p>
+          </header>
 
-  <div class="post-content e-content" itemprop="articleBody">{{ content }}</div>
-</article>
-<hr />
-<div>
-  <p>
-    Unless otherwise specified, all code samples and work are published under
-    the <a href="/license">MIT license</a>.
-  </p>
-</div>
+          <div class="post-content e-content" itemprop="articleBody">
+            {{ content }}
+          </div>
+        </article>
+        <hr />
+        <div>
+          <p>
+            Unless otherwise specified, all code samples and work are published
+            under the <a href="/license">MIT license</a>.
+          </p>
+        </div>
+      </main>
+      <footer>
+        <div>
+          <a href="https://www.linkedin.com/in/tylerwilliamsct/">
+            <img src="/img/linkedin-icon.svg"
+          /></a>
+          <a href="https://twitter.com/coolsoftwaredev">
+            <img src="/img/twitter-icon.svg" />
+          </a>
+          <a href="">
+            <img src="/img/youtube-icon.svg" />
+          </a>
+        </div>
+        <p>© 2022 Cool Software LLC</p>
+        <a href="/privacy">Data & Privacy</a>
+      </footer>
+    </div>
+  </body>
+</html>
