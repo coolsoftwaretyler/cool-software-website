@@ -257,8 +257,6 @@ footer a:active {
         margin-right: 0;
         margin-bottom: 1em;
     }
-
-
 }
 
 .blogmain {
@@ -286,4 +284,21 @@ footer a:active {
 .blogpost a {
     color: var(--light-blue);
 
+}
+
+.contactpage {
+    min-height: 80vh;
+    margin: 0 auto;
+    max-width: 700px;
+}
+
+.contactpage form {
+    margin-top: 1rem;
+    width: 100%;
+}
+
+.contactpage label {
+    color: var(--light-blue);
+    display: block;
+    margin: 0.25rem 0;
 }
