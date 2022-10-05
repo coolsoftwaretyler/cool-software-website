@@ -158,7 +158,9 @@ nav ul a:active {
     text-align: center;
 }
 
-.buttonlink {
+.buttonlink,
+.contactpage button {
+    background-color: transparent;
     border: 3px solid var(--white);
     color: var(--white);
     display: block;
@@ -170,7 +172,10 @@ nav ul a:active {
 
 .buttonlink:hover,
 .buttonlink:focus,
-.buttonlink:active {
+.buttonlink:active
+.contactpage button:hover,
+.contactpage button:focus,
+.co         ntactpage button:active {
     background: var(--white);
     color: var(--purple);
 }
@@ -293,6 +298,7 @@ footer a:active {
 }
 
 .contactpage form {
+    box-sizing: border-box;
     margin-top: 1rem;
     width: 100%;
 }
@@ -301,4 +307,24 @@ footer a:active {
     color: var(--light-blue);
     display: block;
     margin: 0.25rem 0;
+}
+
+.contactpage input {
+    border: 1px solid var(--light-blue);
+    border-radius: 0.25rem;
+    box-sizing: border-box;
+    display: block;
+    margin-bottom: 1rem;
+    padding: 0.5rem;
+    width: 100%;
+}
+
+.contactpage textarea {
+    border: 1px solid var(--light-blue);
+    border-radius: 0.25rem;
+    box-sizing: border-box;
+    display: block;
+    margin-bottom: 1rem;
+    padding: 0.5rem;
+    width: 100%;
 }
