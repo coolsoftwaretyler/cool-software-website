@@ -2,9 +2,9 @@
 layout: post
 title: Delete Derived Data in Xcode when React Native Build Fails
 tags: ['post']
-highlight: 'Git'
 description: I've started working on a React Native project, and ran into a build issue with a quick fix.
 date: 2021-08-16
+highlight: React Native
 ---
 
 I've recently started working on a pretty fun [React Native](https://reactnative.dev/) project. It's been a great learning experience, full of new learnings. One big thing I'm contending with now is unexpected errors in my Xcode build step for iOS. 

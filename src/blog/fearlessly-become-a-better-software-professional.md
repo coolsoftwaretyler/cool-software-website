@@ -5,6 +5,7 @@ tags: ['post']
 description: It is hard to improve software skills because of discriminatory attitudes in the industry and high stakes. This is my framework for fearlessly and efficiently improving my own skills.
 date: 2020-12-11
 canonical_url: 'https://coolsoftware.dev/fearlessly-become-a-better-software-professional/'
+highlight: Professional Development
 ---
 
 *I originally compiled these thoughts as an email response to my mentee at [Emergent Works](https://www.emergentworks.org/), but I thought other people might benefit from it, so I've turned it into a public blog post.*
