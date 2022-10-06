@@ -118,6 +118,7 @@ nav ul a:active {
 }
 
 .intro img {
+    height: auto;
     max-width: 100%;
 }
 
