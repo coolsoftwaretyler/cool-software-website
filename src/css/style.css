@@ -144,6 +144,10 @@ nav ul a:active {
     min-width: 300px;
 }
 
+.content > div a {
+    color: var(--light-blue);
+}
+
 .contact {
     align-items: center;
     background: var(--purple);
@@ -176,7 +180,7 @@ nav ul a:active {
 .buttonlink:active
 .contactpage button:hover,
 .contactpage button:focus,
-.co         ntactpage button:active {
+.contactpage button:active {
     background: var(--white);
     color: var(--purple);
 }
