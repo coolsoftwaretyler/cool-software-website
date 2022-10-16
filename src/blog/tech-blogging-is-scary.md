@@ -4,7 +4,7 @@ title: Tech Blogging is Scary (But Like, in a Good Way)
 tags: ['post']
 description: 'Reflections about: tech blogging, taking time to clean up your code, and really just enjoying your work.'
 date: 2022-10-16
-highlight: React Native
+highlight: Reflection
 ---
 
 I'm getting back into tech blogging. If you recognize my face or know me from elsewhere in the internet, you might have caught me over at [https://ogdenstudios.xyz](https://ogdenstudios.xyz) before. That link may or may not continue to work as I move on to a new phase in my professional life, but it was a blog I kept for the past five or so years, although I substantially slowed down with my posting in the recent past.
