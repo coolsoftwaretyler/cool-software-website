@@ -7,7 +7,7 @@ date: 2022-10-16
 highlight: React Native
 ---
 
-I'm getting back into tech blogging. If you recognize my face or know me from elsewhere in the internet, you might have caught me over at [https://ogdenstudios.xyz](https://ogdenstudios.xyz) before. That link may or may not continue to work as I move on to a new phase in my professional life, but it was a blog I kept for the past five or so years, although I substantially slowed down with my postin in the recent past.
+I'm getting back into tech blogging. If you recognize my face or know me from elsewhere in the internet, you might have caught me over at [https://ogdenstudios.xyz](https://ogdenstudios.xyz) before. That link may or may not continue to work as I move on to a new phase in my professional life, but it was a blog I kept for the past five or so years, although I substantially slowed down with my posting in the recent past.
 
 I've decided to breathe new life into my blogging habit with a slightly new brand (Cool Software, LLC), and a more narrow focus (React Native, Cloud Computing, and my own professional development). 
 
@@ -46,7 +46,7 @@ So here's some thoughts about what I'm *excited* about, with regards to blogging
 
 ## Giving myself structure
 
-I respond well to structure: I like processes, feedback loops, and measuring goals. So my rough plan is inspired by [Chelase Troy's post on warmpu reading](https://chelseatroy.com/2018/07/12/leveling-up-skill-5-warmup-reading/) and her [post on active reading](https://chelseatroy.com/2018/08/22/level-up-skill-8-active-reading/). 
+I respond well to structure: I like processes, feedback loops, and measuring goals. So my rough plan is inspired by [Chelsea Troy's post on warmup reading](https://chelseatroy.com/2018/07/12/leveling-up-skill-5-warmup-reading/) and her [post on active reading](https://chelseatroy.com/2018/08/22/level-up-skill-8-active-reading/). 
 
 The plan is: 
 
@@ -68,7 +68,7 @@ Taking time to clean up code is really important, and it pays off. We always thi
 Finally, here's a list of blog posts I thought about writing, and their half-formed thesis/thoughts. If you're looking for ideas to write your *own* technical blog post about, feel free to steal any of these. Just let me know when you're done writing it, so I can write a response post to you (which would be a lot easier than doing the original one, haha).
 
 1. Where do you write utility functions in your React Native projects? In the same file as the JSX? Next to the files that use it? In a different part of the project? Who knows? Not me. This is vaguely interesting to me, but it's a scary post to think about because it feels like lots of people are going to have lots of strong opinions.
-1. Where do you put team documenation? Primarily I'm thinking about how disvoerability is challenging. I mean, that's the whole reason search engines became a big business in the early internet, right? It's one thing to write notes about technical decisions, it's another to socialize those as your team grows. This is not a terribly interesting blog post to me, but it feels like something LinkedIn would like.
+1. Where do you put team documentation? Primarily I'm thinking about how discoverability is challenging. I mean, that's the whole reason search engines became a big business in the early internet, right? It's one thing to write notes about technical decisions, it's another to socialize those as your team grows. This is not a terribly interesting blog post to me, but it feels like something LinkedIn would like.
 1. Technical blog post using the new Expo Router. This seems like it'll be a lot of fun to do, but pretty time intensive to say anything meaningful about it that the docs don't say.
 1. "Focus" in React Native. People in the Infinite Red slack were asking about accessibility focus events, and I realized I don't know how they work/what's available. I know a lot about what web browsers make available, but almost nothing about Android or iOS. This also feels like a candidate for like... weeks of research.
 1. JSX - how many expressions are too many? I have some opinions about this (if you have more than like, three conditional expressions in your JSX, you've missed an abstraction) - but I feel like this is another scary topic that's going to start a flame war and ultimately be a bunch of bikeshedding for little value. I might not touch this one.
@@ -82,7 +82,7 @@ Finally, here's a list of blog posts I thought about writing, and their half-for
 1. How to think about bundling (or not bundling) npm packages intended to be consumed by React Native apps. I got some good feedback in the Infinite Red slack channel about this.
 1. Managing network requests and state - when and how do you initiate, retry, and handle errors in the network layer while working with React Native state? This one could be a thesis. Tough to write well but keep it concise. Maybe deserves a series. 
 1. A listicle about what I love about React Native, and comparing it to web app development. This... also seems incendiary, so I may just send these thoughts to Twitter one at a time.
-1. "Living" ES6 imports - when does your code get executed when you use ES6 imports. I think I can mak ehtis pretty tight, and I may end up writing it in a few days here. 
+1. "Living" ES6 imports - when does your code get executed when you use ES6 imports. I think I can make this pretty tight, and I may end up writing it in a few days here. 
 1. Testing React Native with Jest really helps you understand "What is it?" - a post about how testing gives you a sense of what your components really are as they exist in the run time.
 
 Wowza, that's a lot of blog posts that I'm terrified to write. I suppose I'm going to have to... write them.
