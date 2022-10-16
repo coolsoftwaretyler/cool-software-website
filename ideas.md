@@ -88,3 +88,11 @@ Gum runner
     - Enjoy your work
     - Explore the furthest possibility, but do it quickly
     - Stay alive
+
+Testing MST is hard with RNTL
+    - Views - what functions?
+
+Show demo of "living" ES6 imports
+
+Testing with Jest allows you to understand "what is it?" - directly importing your thing, manipulate it, test kt
+Uniquely awesome in React Native because everything we have is in JS/TS
