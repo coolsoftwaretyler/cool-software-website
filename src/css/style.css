@@ -130,17 +130,14 @@ nav ul a:active {
 .content {
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
     gap: 0.83em;
     margin-bottom: 2rem;
 }
 
-.content h2 {
-    min-width: 100%;
-    margin: 0;
-}
-
 .content > div {
     flex: 1;
+    max-width: 600px;
     min-width: 300px;
 }
 
