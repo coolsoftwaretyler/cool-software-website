@@ -50,7 +50,7 @@ SEO - don't need to publish regularly. it doesn't fade like virality.
 - Viral content isn't exponential growth. It actually decays.
 - Viral content has to be exposed to a huge audience. But the virality fades over time.
 
-## 2.3 Bustin publish more often myth
+## 2.3 Busting publish more often myth
 
 SEO traffic doesn't require publishing a huge amount of content.
 
@@ -60,3 +60,17 @@ SEO traffic doesn't require publishing a huge amount of content.
 Focus efforts on a few keystone articles and get them to rank.
 
 Viral traffic is a gamble, SEO traffic is repeatable.
+
+## 2.4 Convert visitors into subscribers
+
+- Subscribers are important for retention. Growing audience is the thing. Grow a list.
+- Probably won't see people again if they dont' subscribe.
+- Hard to generate word of mouth without subscriptions
+
+## Overall for chapter 2
+
+- Don't focus on those spikes, focus on overall growth.
+
+## 3.1 Test article ideas for search demand
+
+- 

@@ -1,0 +1,11 @@
+declare const getSleeperConfiguration: () => PlatformConfig;
+declare const setConfiguration: (userId: string) => PlatformConfig;
+declare const getUserDataByUsername: (username: string) => Promise<SleeperUser>;
+declare const getLeagueDataByUserId: (userId: string, year: string) => Promise<SleeperLeague[]>;
+declare const getLeagueUsersByLeagueId: (leagueId: string) => Promise<SleeperRoster[]>;
+declare const getAllDraftsForUser: (userId: string, year: string) => Promise<SleeperDraft[]>;
+declare const getAllDraftsForLeague: (leagueId: string) => Promise<SleeperDraft[]>;
+declare const getPicksForDraft: (draftId: string) => Promise<SleeperPick[]>;
+declare const getLeague: (leagueId: string) => Promise<any>;
+declare const getTeamsInLeague: (leagueId: string) => Promise<SleeperTeam[]>;
+export { getSleeperConfiguration, setConfiguration, getUserDataByUsername, getLeagueDataByUserId, getLeagueUsersByLeagueId, getAllDraftsForUser, getAllDraftsForLeague, getPicksForDraft, getLeague, getTeamsInLeague, };

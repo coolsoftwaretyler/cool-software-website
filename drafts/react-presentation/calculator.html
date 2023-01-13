@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator demo</title>
+</head>
+<body>
+    <h1>Is it a touchdown?</h1>
+    <form>
+        <input type="text" name="yards" placeholder="Yards to go" />
+        <input type="submit" value="Calculate" />
+    </form>
+</body>
+
+<script>
+    // Get the form element
+    const form = document.querySelector('form');
+    // Get the input element
+    const input = document.querySelector('input[type="text"]');
+    // Get the calculate button
+    const button = document.querySelector('input[type="submit"]');
+
+    // Add an event listener to the form
+    form.addEventListener('submit', function(event) {
+        // Prevent the form from submitting
+        event.preventDefault();
+        // Get the value of the input
+        const yards = input.value;
+        // Check if the value is a number
+        if (isNaN(yards)) {
+            // If it's not a number, alert the user
+            result('Please enter a number');
+        } else {
+            // If it is a number, check if it's a touchdown
+            if (yards == 0) {
+                result('Touchdown!');
+            } else {
+                result('Not a touchdown');
+            }
+        }
+    });
+
+    // Add a DOM element with the alert based on touchdown
+    // Add a DOM element with the alert based on not a touchdown
+    function result(message) {
+        // Create a new div element
+        const div = document.createElement('div');
+        // Add the message to the div
+        div.textContent = message;
+        // Add the div to the body
+        document.body.appendChild(div);
+    }
+</script>
+</html>
