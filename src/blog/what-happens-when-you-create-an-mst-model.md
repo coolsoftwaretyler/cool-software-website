@@ -8,8 +8,6 @@ canonical_url: "https://coolsoftware.dev/what-happens-when-you-create-an-mst-mod
 highlight: MobX-State-Tree
 ---
 
-# What happens when you create a MobX-State-Tree model?
-
 I recently joined the core team of maintainers for [MobX-State-Tree](https://mobx-state-tree.js.org/intro/welcome), and I've been digging into the internals to learn about how it all works under the hood. This blog post is intended to be used as documentation and context for a pull request adding test coverage to the library. Unless you're deeply interested in the internals of MobX-State-Tree, you may find it a little dry. I mostly wrote it as a guide for my own experimentation and understanding.
 
 But if you're excited about JavaScript state management and/or open source software, you've come to the right place! Let's get to it. I'll be taking a look at the codebase in the commit with hash [`048f1ebf0d2c49983ec8914d78162882bc1a3e3e`](https://github.com/mobxjs/mobx-state-tree/tree/048f1ebf0d2c49983ec8914d78162882bc1a3e3e/packages/mobx-state-tree)
