@@ -76,7 +76,7 @@ There's lots to be said about the `IModelType` interface, so I'll save that for 
 To keep this post tightly scoped, I'm going to focus on what goes on in the [`ModelType` constructor](https://github.com/mobxjs/mobx-state-tree/blob/048f1ebf0d2c49983ec8914d78162882bc1a3e3e/packages/mobx-state-tree/src/types/complex-types/model.ts#L342):
 
 1. We set the name of the model.
-2. We parse the provided properties into an actual instance of [`ModelProperties`](https://github.com/mobxjs/mobx-state-tree/blob/048f1ebf0d2c49983ec8914d78162882bc1a3e3e/packages/mobx-state-tree/src/types/complex-types/model.ts#L65) (notice how we took an `ModelPropertiesDeclaration` and turned it into an actual `ModelProperties`).
+2. We [convert the provided properties into an actual instance](https://coolsoftware.dev/blog/how-does-mobx-state-tree-infer-model-properties/) of [`ModelProperties`](https://github.com/mobxjs/mobx-state-tree/blob/048f1ebf0d2c49983ec8914d78162882bc1a3e3e/packages/mobx-state-tree/src/types/complex-types/model.ts#L65) (notice how we took an `ModelPropertiesDeclaration` and turned it into an actual `ModelProperties`).
 3. We freeze the properties (another internal MST function that deserves its own post).
 4. We determine the identifier attribute if there is one.
 
