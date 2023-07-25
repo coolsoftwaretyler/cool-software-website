@@ -100,7 +100,7 @@ Once we get to the call `toPropertiesObject`, we take our `ModelPropertiesDeclar
 1. If the value is a function, we will set it as `undefined` in production, and we will throw an error in any environment other than `NODE_ENV === 'production'`
 1. If the value is an object, we will set it as `undefined` in production, and we will throw an error in any environment other than `NODE_ENV === 'production'`
 
-Lots of stuff in there! While I was writing up this blog post, I put together some new tests for the MobX-State-Tree repository to exercise most of these scenarios. You can see those [in this PR](#link-here).
+Lots of stuff in there! While I was writing up this blog post, I put together some new tests for the MobX-State-Tree repository to exercise most of these scenarios. You can see those [in this PR](https://github.com/mobxjs/mobx-state-tree/pull/2051).
 
 ### Actually inferring the type
 
