@@ -449,7 +449,7 @@ const rootStore = RootStore.create({
 
 [Check it out in CodeSandbox](https://codesandbox.io/s/sharp-bardeen-6gzfpz?file=/src/index.ts)
 
-## What I learned writing this Blog Post
+## Stuff I learned writing this post
 
 1. I need to go through and do a deep dive on `actions` and `views` in MobX-State-Tree. I mentioned this in my [post about model creation](https://coolsoftware.dev/blog/what-happens-when-you-create-an-mst-model/), but there are important implications of those methods, and the way they interact with the TypeScript system has far-reaching implications.
 2. I don't think we're particularly clear with people about when and where they want to use type casting functions. I hope this blog post helps improve that, but we need better docs about TypeScript inference overall.
