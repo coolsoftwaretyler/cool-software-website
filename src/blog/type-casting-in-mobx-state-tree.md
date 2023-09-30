@@ -246,7 +246,7 @@ sayHello(tyler);
 
 [You can see that TypeScript is happy with this in CodeSandbox](https://codesandbox.io/s/vigilant-rhodes-6rfz99?file=/src/index.ts). In this case, TypeScript is able to _infer_ that `tyler`, an instance of `Person` (an MST model type), satisfies the interface for `IPerson`. This is a slightly more useful version of type inference - I think it looks a little more like a real MST program (if you squint your eyes a little).
 
-## Realistic Type Inference with TypeScript and MobX-State-Tree
+## Realistic Type Inference
 
 Ok, those first two examples were kind of hand-wavy on purpose. I wanted to write straightforward code to establish a baseline about how TypeScript and MobX-State-Tree collaborate together to understand both types of types (say that ten times fast) in your program.
 
@@ -300,9 +300,7 @@ It's a little confusing to read, but for now, concentrate on the fact that **thi
 
 If you changed `listOfVeryCoolPeople` to read `p.firstName`, you'd get both a runtime error _and_ a TypeScript error, since TS knows `firstName` is not a property on the `Person` MST type (or its inferred TypeScript type). [See that here](https://codesandbox.io/s/distracted-tess-vmrr3v?file=/src/index.ts). You'll get an error like:
 
-```
-Property 'firstName' does not exist on type '{ name: string; greeting: string; } & NonEmptyObject & IStateTreeNode<IModelType<{ name: ISimpleType<string>; greeting: IOptionalIType<ISimpleType<string>, [undefined]>; }, {}, _NotCustomized, _NotCustomized>>'.ts(2339)
-```
+`Property 'firstName' does not exist on type '{ name: string; greeting: string; } & NonEmptyObject & IStateTreeNode<IModelType<{ name: ISimpleType<string>; greeting: IOptionalIType<ISimpleType<string>, [undefined]>; }, {}, _NotCustomized, _NotCustomized>>'.ts(2339)`
 
 ## Type Casting in MobX-State-Tree
 
@@ -341,7 +339,7 @@ const rootStore = RootStore.create({
 
 If you [check this in CodeSandbox](https://codesandbox.io/s/quiet-fire-8d33x9?file=/src/index.ts), you'll see an error in `setCoolestPerson`, but not one in the `RootStore.create` call.
 
-### How to Fix TypeScript Errors in MobX-State-Tree Snapshot Assignments
+### How to fix TypeScript errors in MobX-State-Tree snapshot assignments
 
 Ok, so the quick fix here is to use [`cast`](https://mobx-state-tree.js.org/API/#cast), like we already covered in the beginning of the post:
 
@@ -451,7 +449,7 @@ const rootStore = RootStore.create({
 
 [Check it out in CodeSandbox](https://codesandbox.io/s/sharp-bardeen-6gzfpz?file=/src/index.ts)
 
-## What I learned writing this blog post
+## What I learned writing this Blog Post
 
 1. I need to go through and do a deep dive on `actions` and `views` in MobX-State-Tree. I mentioned this in my [post about model creation](https://coolsoftware.dev/blog/what-happens-when-you-create-an-mst-model/), but there are important implications of those methods, and the way they interact with the TypeScript system has far-reaching implications.
 2. I don't think we're particularly clear with people about when and where they want to use type casting functions. I hope this blog post helps improve that, but we need better docs about TypeScript inference overall.
