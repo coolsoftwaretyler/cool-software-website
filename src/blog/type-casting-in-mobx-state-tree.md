@@ -159,7 +159,7 @@ console.log(rootStore.coolestPerson.name);
 
 [No errors here](https://codesandbox.io/s/nifty-monad-x5wr3d?file=/src/index.ts)
 
-This is not an exhaustive list of the scenarios where you migth want `cast`, but I think these are representative of the fundamental principle. You need `cast` in scenarios where TypeScript is looking for the full inferred type for a MobX-State-Tree type, and you want to use a snapshot. If you just came here to see some code samples and figure out when to use/not use `cast`, you can stop here and hopefully that'll clear things up for you.
+This is not an exhaustive list of the scenarios where you might want `cast`, but I think these are representative of the fundamental principle. You need `cast` in scenarios where TypeScript is looking for the full inferred type for a MobX-State-Tree type, and you want to use a snapshot. If you just came here to see some code samples and figure out when to use/not use `cast`, you can stop here and hopefully that'll clear things up for you.
 
 If you want to read more about why, continue on!
 
