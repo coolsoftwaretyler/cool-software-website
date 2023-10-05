@@ -185,7 +185,7 @@ const stringResult = needsAString(stringInstance);
 console.log(stringResult);
 ```
 
-In this example, we define a function, `needsAString`, which requires a `string` as its input. And we create an instance of the [MST primitive type](https://mobx-state-tree.js.org/overview/types), `types.string` with the value `"hello"`. Then we pass the `stringInstance` to `needsAString`, which just returns the input back to us. TypeScript is very happy with us when we do this. You can see the code in a TypeScript environment here: [https://codesandbox.io/s/optimistic-fire-nn8r2h?file=/src/index.ts](https://codesandbox.io/s/optimistic-fire-nn8r2h?file=/src/index.ts)
+In this example, we define a function, `needsAString`, which requires a `string` as its input. And we create an instance of the [MST primitive type](https://mobx-state-tree.js.org/overview/types), `types.string` with the value `"hello"`. Then we pass the `stringInstance` to `needsAString`, which just returns the input back to us. TypeScript is very happy with us when we do this. You can see the code in a TypeScript environment [here](https://codesandbox.io/s/optimistic-fire-nn8r2h?file=/src/index.ts)
 
 ## More Complex Type Inference
 
@@ -374,7 +374,7 @@ const rootStore = RootStore.create({
 
 This will resolve the TypeScript error. You can see that in [CodeSandbox](https://codesandbox.io/s/late-glitter-2536ql?file=/src/index.ts)
 
-p### Why Does It Seem Inconsistent?
+### Why Does It Seem Inconsistent?
 
 If you hover over the `RootStore.create` call for `coolestPerson`, TypeScript will say:
 
