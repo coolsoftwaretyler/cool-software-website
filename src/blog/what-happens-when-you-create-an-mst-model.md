@@ -4,7 +4,7 @@ title: "What happens when you create a MobX-State-Tree model?"
 tags: ["post"]
 description: "A deep dive into the way MobX-State-Tree creates model type instances."
 date: 2023-07-17
-canonical_url: "https://coolsoftware.dev/what-happens-when-you-create-an-mst-model/"
+canonical_url: "https://coolsoftware.dev/blog/what-happens-when-you-create-an-mst-model/"
 highlight: MobX-State-Tree
 ---
 

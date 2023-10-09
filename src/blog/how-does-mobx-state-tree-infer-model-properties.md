@@ -4,7 +4,7 @@ title: "How Does MobX-State-Tree Infer Model Properties?"
 tags: ["post"]
 description: "A deep dive into the way MobX-State-Tree infers model properties from primitive values."
 date: 2023-07-24
-canonical_url: "https://coolsoftware.dev/how-does-mobx-state-tree-infer-model-properties/"
+canonical_url: "https://coolsoftware.dev/blog/how-does-mobx-state-tree-infer-model-properties/"
 highlight: MobX-State-Tree
 ---
 

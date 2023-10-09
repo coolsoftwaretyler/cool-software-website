@@ -4,7 +4,7 @@ title: "Benchmarking MobX-State-Tree Performance"
 tags: ["post"]
 description: "Introducing a system to benchmark MobX-State-Tree performance and memory usage across environments."
 date: 2023-10-08
-canonical_url: "https://coolsoftware.dev/benchmarking-mobx-state-tree-performance/"
+canonical_url: "https://coolsoftware.dev/blog/benchmarking-mobx-state-tree-performance/"
 highlight: MobX-State-Tree
 ---
 

@@ -4,7 +4,7 @@ title: "When should I use type casting in MobX-State-Tree?"
 tags: ["post"]
 description: "A simple rubric for when the cast function is helpful, along with more details about the underlying type inference system of MobX-State-Tree."
 date: 2023-09-30
-canonical_url: "https://coolsoftware.dev/when-should-i-use-type-casting-in-mobx-state-tree/"
+canonical_url: "https://coolsoftware.dev/blog/when-should-i-use-type-casting-in-mobx-state-tree/"
 highlight: MobX-State-Tree
 ---
 
