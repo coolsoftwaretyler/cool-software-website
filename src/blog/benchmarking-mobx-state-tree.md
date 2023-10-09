@@ -21,7 +21,7 @@ The poll only had 72 participants, and 16.7% of them just voted to watch the res
 
 Here's the thing about performance improvements: if you can't define and measure the performance of your system, you cannot diagnose performance problems, fix them, or prove that your changes have actually led to improvements. So before we can actually fix the performance issues of MobX-State-Tree, we have to understand the existing performance profile of the library.
 
-MobX-State-Tree has some [existing performance tests](https://github.com/mobxjs/mobx-state-tree/tree/1d600ed6319a9645c0789303d3e9c6179809d43f/packages/mobx-state-tree/__tests__/perf), but they aren't comprehensive, and [it looks like we aren't sure how useful they are any](https://github.com/mobxjs/mobx-state-tree/blob/1d600ed6319a9645c0789303d3e9c6179809d43f/packages/mobx-state-tree/__tests__/perf/perf.test.ts#L4). So I set out to build a system to test MobX-State-Tree's performance from scratch. Here's how.
+MobX-State-Tree has some [existing performance tests](https://github.com/mobxjs/mobx-state-tree/tree/1d600ed6319a9645c0789303d3e9c6179809d43f/packages/mobx-state-tree/__tests__/perf), but they aren't comprehensive, and [it looks like we aren't sure how useful they are](https://github.com/mobxjs/mobx-state-tree/blob/1d600ed6319a9645c0789303d3e9c6179809d43f/packages/mobx-state-tree/__tests__/perf/perf.test.ts#L4). So I set out to build a system to test MobX-State-Tree's performance from scratch. Here's how.
 
 ## What does a good benchmarking suite look like?
 
