@@ -52,7 +52,7 @@ const u = User.create();
 
 You'll get an error as follows:
 
-```
+```sh
 Error: [mobx-state-tree] Cannot modify 'AnonymousModel@<root>', the object is protected and can only be modified by using an action.
 ```
 
