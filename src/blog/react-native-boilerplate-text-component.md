@@ -163,6 +163,4 @@ What I love about this design is that it's consistent by default, but allows for
 
 ## My custom text component
 
-I don't have apps that need internationalization support at the moment, and I prefer using React Native's [StyleSheet](https://reactnative.dev/docs/stylesheet) over Infinite Red's convetion of writing styles with `$` prefixes. So I have a
-
-Gist: https://gist.github.com/coolsoftwaretyler/5b9c4bf15cdbcc4c5b132a4082b0f767
+I don't have apps that need internationalization support at the moment, and I prefer using React Native's [StyleSheet](https://reactnative.dev/docs/stylesheet) over Infinite Red's convetion of writing styles with `$` prefixes. There's also no easy way to grab this code directly from Ignite at the moment, so I have a starting component. Here's the Gist: https://gist.github.com/coolsoftwaretyler/5b9c4bf15cdbcc4c5b132a4082b0f767
