@@ -1,4 +1,29 @@
+Why do I get this error from 11ty:
+
+```
+[11ty] Problem writing Eleventy templates: (more in DEBUG output)
+[11ty] 1. Having trouble rendering liquid template ./src/blog/flexible-reusable-text-react-native.md (via TemplateContentRenderError)
+[11ty] 2. unexpected token at ": 20", file:./src/blog/flexible-reusable-text-react-native.md, line:124, col:15 (via ParseError)
+[11ty] 3. unexpected token at ": 20" (via AssertionError)
+[11ty]
+[11ty] Original error stack trace: AssertionError: unexpected token at ": 20"
+[11ty]     at new AssertionError (/Users/tylerwilliams/cool-software-website/node_modules/liquidjs/dist/liquid.node.cjs.js:1198:28)
+[11ty]     at assert (/Users/tylerwilliams/cool-software-website/node_modules/liquidjs/dist/liquid.node.cjs.js:1233:15)
+[11ty]     at Tokenizer.readFilter (/Users/tylerwilliams/cool-software-website/node_modules/liquidjs/dist/liquid.node.cjs.js:2240:9)
+[11ty]     at Tokenizer.readFilters (/Users/tylerwilliams/cool-software-website/node_modules/liquidjs/dist/liquid.node.cjs.js:2229:31)
+[11ty]     at new Value (/Users/tylerwilliams/cool-software-website/node_modules/liquidjs/dist/liquid.node.cjs.js:2783:34)
+[11ty]     at new Output (/Users/tylerwilliams/cool-software-website/node_modules/liquidjs/dist/liquid.node.cjs.js:4467:23)
+[11ty]     at Parser.parseToken (/Users/tylerwilliams/cool-software-website/node_modules/liquidjs/dist/liquid.node.cjs.js:4536:24)
+[11ty]     at Parser.parseTokens (/Users/tylerwilliams/cool-software-website/node_modules/liquidjs/dist/liquid.node.cjs.js:4526:33)
+[11ty]     at Parser.parse (/Users/tylerwilliams/cool-software-website/node_modules/liquidjs/dist/liquid.node.cjs.js:4520:21)
+[11ty]     at Liquid.parse (/Users/tylerwilliams/cool-software-website/node_modules/liquidjs/dist/liquid.node.cjs.js:4658:28)
+[11ty] Wrote 0 files in 0.20 seconds (v1.0.2)
+```
+
+For this file:
+
 ---
+
 layout: post
 title: "Flexible and Reusable Text in React Native"
 tags: ["post"]
@@ -6,6 +31,7 @@ description: "A technique to keep React Native typography simple and consistent.
 date: 2023-12-29
 canonical_url: "https://coolsoftware.dev/blog/flexible-reusable-text-react-native/"
 highlight: React Native
+
 ---
 
 When I build with React Native, I usually write a ton of `<Text />` tags. It's one of the most common things I do. Here's what that usually looks like:
@@ -119,8 +145,6 @@ And here's the [actual code](https://github.com/infinitered/ignite/blob/master/b
 
 When you use Ignite's text component, you can write terser, clearer code. This is faster to write, and easier to understand:
 
-{% raw %}
-
 ```tsx
 import React from "react";
 import { View, StyleSheet } from "react-native";
@@ -163,8 +187,6 @@ const styles = StyleSheet.create({
 
 export default SampleComponent;
 ```
-
-{% endraw %}
 
 ## What's so good about it?
 
