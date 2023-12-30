@@ -192,7 +192,7 @@ If you have a brand new, or very early project, I recommend you just [start from
 
 If you have an existing project, you can always copy/paste [their code](https://github.com/infinitered/ignite/blob/master/boilerplate/app/components/Text.tsx) into your repository. It's [MIT licensed](https://github.com/infinitered/ignite/blob/master/LICENSE). Huge thanks to Infinite Red for that. Y'all are the best.
 
-Personally, I wanted to tweak the component a little bit. I don't need internationalization support at the moment, and I prefer using React Native's [StyleSheet](https://reactnative.dev/docs/stylesheet) over Infinite Red's convention of writing styles with `$` prefixes. I re-wrote their `Text` component to my own `BrandText` component. Here's a lightweight Gist you can copy/paste or fork for your own purposes: https://gist.github.com/coolsoftwaretyler/5b9c4bf15cdbcc4c5b132a4082b0f767
+Personally, I wanted to tweak the component a little bit. I don't need internationalization support at the moment, and I prefer using React Native's [StyleSheet](https://reactnative.dev/docs/stylesheet) over Infinite Red's convention of writing styles with `$` prefixes. I re-wrote their `Text` component to my own `BrandText` component. Here's a lightweight [Gist](https://gist.github.com/coolsoftwaretyler/5b9c4bf15cdbcc4c5b132a4082b0f767) you can copy/paste or fork for your own purposes.
 
 ## Closing thoughts
 
