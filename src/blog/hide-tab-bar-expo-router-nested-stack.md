@@ -8,10 +8,6 @@ canonical_url: "https://coolsoftware.dev/blog/hide-tab-bar-expo-router-nested-st
 highlight: React Native
 ---
 
-https://github.com/coolsoftwaretyler/expo-router-dynamic-tab-bar-example
-
-https://react.dev/reference/react/useContext
-
 Let's say you're using [Expo Router](https://docs.expo.dev/router/installation/#quick-start) or [React Navigation](https://reactnavigation.org/), and you want to:
 
 1. Use a [Tabs layout](https://docs.expo.dev/router/advanced/tabs/)
