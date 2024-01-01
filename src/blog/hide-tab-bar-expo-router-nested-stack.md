@@ -50,8 +50,8 @@ Since [Expo Router is built on top of React Navigation](https://docs.expo.dev/ro
 
 Rearranging the navigation structure doesn't solve your problem if:
 
-1. You want to make the tab bar dismissable even when it would normally be visible.
-2. You don't have permission to rearrange the navigation structure.
+1. You want to make the tab bar dismissable by the user.
+2. You don't have permission to rearrange the navigation structure for some external reason.
 3. Rearranging your navigation structure would introduce some other technical challenge (maybe just a lot of merge conflicts on an existing project)
 4. You want the tab bar toggling to be a little fancier than just rendering/not rendering.
 
