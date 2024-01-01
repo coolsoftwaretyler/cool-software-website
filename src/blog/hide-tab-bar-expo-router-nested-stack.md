@@ -14,7 +14,7 @@ Let's say you're using [Expo Router](https://docs.expo.dev/router/installation/#
 2. Nest a [Stack](https://docs.expo.dev/router/advanced/stack/) inside one of the tabs
 3. Hide the tab bar when a user navigates to certain routes.
 
-This can be a little tricky. The [recommended solution from React Navigation](https://reactnavigation.org/docs/hiding-tabbar-in-screens/) is to nest the tab navigator inside the first screen of the stack instead of nesting stack inside tab navigator, like this:
+This can be a little tricky. The [recommended solution from React Navigation](https://reactnavigation.org/docs/hiding-tabbar-in-screens/) is to nest the tab navigator inside the first screen of the stack instead of nesting the stack inside the tab navigator. Like this:
 
 ```js
 function HomeTabs() {
