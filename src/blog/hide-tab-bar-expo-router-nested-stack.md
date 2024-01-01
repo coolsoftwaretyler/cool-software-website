@@ -161,6 +161,8 @@ This file defines a context (FancyTabBarContext) with initial visibility for the
 
 I think the easiest thing to do with the provider is to wrap our root app with it, over in `app/_layout.tsx`. Like this:
 
+{% raw %}
+
 ```tsx
 /**
  * app/_layout.tsx
@@ -221,6 +223,8 @@ function RootLayoutNav() {
   );
 }
 ```
+
+{% endraw %}
 
 Most of the code here comes straight from `create-expo-app`, but notice how we've imported `FancyTabBarProvider` and wrapped our root `Stack` with it. By doing this, any of the child components of that provider (so, our whole app) can get access to values like this:
 
