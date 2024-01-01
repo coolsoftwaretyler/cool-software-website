@@ -14,7 +14,11 @@ Let's say you're using [Expo Router](https://docs.expo.dev/router/installation/#
 2. Nest a [Stack](https://docs.expo.dev/router/advanced/stack/) inside one of the tabs
 3. Hide the tab bar when a user navigates to certain routes.
 
-This can be a little tricky. The [recommended solution from React Navigation](https://reactnavigation.org/docs/hiding-tabbar-in-screens/) is to nest the tab navigator inside the first screen of the stack instead of nesting the stack inside the tab navigator. Like this:
+This can be a little tricky.
+
+## The React Navigation Recommendations
+
+The [recommended solution from React Navigation](https://reactnavigation.org/docs/hiding-tabbar-in-screens/) is to nest the tab navigator inside the first screen of the stack instead of nesting the stack inside the tab navigator. Like this:
 
 ```js
 function HomeTabs() {
@@ -44,12 +48,14 @@ Since [Expo Router is built on top of React Navigation](https://docs.expo.dev/ro
 
 ## But what if I still want to hide the tabs?
 
-The route restructuring is a great solution, but what it doesn't solve your problem if:
+Rearranging the navigation structure doesn't solve your problem if:
 
-1. You don't have time, energy, or interest in re-arranging your navigation
-2. You still want to make your tab bar dismissable (even from within the top level tab view, perhaps).
+1. You want to make the tab bar dismissable even when it would normally be visible.
+2. You don't have permission to rearrange the navigation structure.
+3. Rearranging your navigation structure would introduce some other technical challenge (maybe just a lot of merge conflicts on an existing project)
+4. You want the tab bar toggling to be a little fancier than just rendering/not rendering.
 
-If you find yourself in either of those scenarios, here's how you can make the Expo Router/React Navigation tab bar a little more flexible.
+If you find yourself in any of those scenarios, here's how you can make the Expo Router/React Navigation tab bar a little more flexible.
 
 ## Skip the blog post, I just want the solution
 
@@ -59,7 +65,9 @@ If you just want to poke around some code, I have a sample repository [here](htt
 2. `components/FancyTabBar.tsx` - wraps the `BottomTabBar` component from `@react-navigation/bottom-tabs` and reads from
 3. `context/FancyTabBarContext.tsx` - React [context](https://react.dev/reference/react/useContext) and an associated provider to control the `FancyTabBar` state.
 
-I hope you find the sample code helpful. For those of you who want to understand the thinking behind that set up, read on!
+If you just wanted sample code, I hope you find that helpful!
+
+For those of you who want to understand the thinking behind that set up, read on.
 
 ## Here's the plan
 
