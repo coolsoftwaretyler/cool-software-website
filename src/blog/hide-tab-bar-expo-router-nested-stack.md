@@ -287,7 +287,9 @@ const styles = StyleSheet.create({
 });
 ```
 
-And that's just about it! I really like using this approach. It gives me more control over navigation. I can structure my files and navigators how I want, and you can even hook into the show/hide functions from other UI elements to allow users to dismiss the tabs in certain flows if they want. In some cases, it can be less work than restructuring your navigation. In other cases (like a brand new project), it might be a little extra work, but I find the benefits are usually worth it.
+And that's just about it! I really like using this approach. It gives me more control over navigation. I can structure my files and navigators how I want, and I can even hook into the show/hide functions from other UI elements to allow users to dismiss the tabs in certain flows if they want. In some cases, it can be less work than restructuring your navigation. In other cases (like a brand new project), it might be a little extra work, but I find the benefits are usually worth it.
+
+This is also a good place to start if you want to customize your tab bar for other reasons. I think starting by augmenting the existing component keeps things consistent, but provides more control over your application.
 
 ## Smoothing out the user experience
 
