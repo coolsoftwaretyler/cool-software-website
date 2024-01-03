@@ -63,7 +63,8 @@ If you just want to poke around some code, I have a sample repository [here](htt
 
 1. `app/(fancytabs)` directory - sets up a tab navigator, nested stack, and a screen that will hide the tab bar
 2. `components/FancyTabBar.tsx` - wraps the `BottomTabBar` component from `@react-navigation/bottom-tabs` and reads from
-3. `context/FancyTabBarContext.tsx` - React [context](https://react.dev/reference/react/useContext) and an associated provider to control the `FancyTabBar` state.
+3. `app/(fancytabs)/_layout.tsx` - uses the `FancyTabBar` component we wrote
+4. `context/FancyTabBarContext.tsx` - React [context](https://react.dev/reference/react/useContext) and an associated provider to control the `FancyTabBar` state.
 
 If you just wanted sample code, I hope you find that helpful!
 
@@ -237,6 +238,66 @@ const { isTabBarVisible, hideTabBar, showTabBar } = useFancyTabBar();
 ```
 
 This means the `FancyTabBar` component can read `isTabBarVisible` and react to it, and other parts of our app can hide or show it. Here's how:
+
+## Using the Fancy Tab Bar in Tab Navigator
+
+Finally, we need to tell our `Tabs` component to actually use the `FancyTabBar` component, and we'll spread the props that `Tabs` gets down into our `FancyTabBar` component. We can do this with the [`tabBar` prop](https://reactnavigation.org/docs/handling-safe-area/#hiddencustom-header-or-tab-bar) In the `_layout.tsx` file where the tabs are, we write:
+
+{% raw %}
+
+```tsx
+/**
+ * app/(fancytabs)/_layout.tsx
+ * https://github.com/coolsoftwaretyler/expo-router-dynamic-tab-bar-example/blob/main/app/(fancytabs)/_layout.tsx
+ */
+import FontAwesome from "@expo/vector-icons/FontAwesome";
+import { Tabs } from "expo-router";
+import { useColorScheme } from "react-native";
+import Colors from "../../constants/Colors";
+import FancyTabBar from "../../components/FancyTabBar";
+
+/**
+ * You can explore the built-in icon families and icons on the web at https://icons.expo.fyi/
+ */
+function TabBarIcon(props: {
+  name: React.ComponentProps<typeof FontAwesome>["name"];
+  color: string;
+}) {
+  return <FontAwesome size={28} style={{ marginBottom: -3 }} {...props} />;
+}
+
+export default function TabLayout() {
+  const colorScheme = useColorScheme();
+
+  return (
+    <Tabs
+      screenOptions={{
+        tabBarActiveTintColor: Colors[colorScheme ?? "light"].tint,
+      }}
+      tabBar={(props) => {
+        return <FancyTabBar {...props} />;
+      }}
+    >
+      <Tabs.Screen
+        name="fancy-stack"
+        options={{
+          title: "Tab One",
+          tabBarIcon: ({ color }) => <TabBarIcon name="code" color={color} />,
+        }}
+      />
+      <Tabs.Screen
+        name="two"
+        options={{
+          title: "Tab Two",
+          tabBarIcon: ({ color }) => <TabBarIcon name="code" color={color} />,
+        }}
+      />
+    </Tabs>
+  );
+}
+```
+
+{% endraw %}
 
 ## Hiding the Fancy Tab Bar
 
