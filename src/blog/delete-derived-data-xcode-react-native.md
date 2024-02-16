@@ -11,13 +11,13 @@ _Updated February 16, 2024_
 
 ## Just need the steps? Here's how:
 
-1. Navigate to **Xcode > Preferences**.
+1. Navigate to **Xcode > Settings...**.
 1. Click on the **Locations** tab in the preferences dialog.
-1. Locate **Derived Data** and click on the arrow to open its location in finder.
+1. Locate **Derived Data** and click on the horizontal arrow (it's quite small) to open its location in finder.
 1. Close Xcode, delete the folder via Finder.
 1. Reopen Xcode, rebuild everything.
 
-## Here's why I wrote this post in 2021
+## Original post from 2021
 
 I've recently started working on a pretty fun [React Native](https://reactnative.dev/) project. It's been a great learning experience, full of new learnings. One big thing I'm contending with now is unexpected errors in my Xcode build step for iOS.
 
