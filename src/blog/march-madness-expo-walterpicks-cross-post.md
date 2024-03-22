@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "My blog post about WalterPicks on the Expo Blog"
+tags: ["post"]
 description: "I wrote about our March Madness bracket builder tool for Expo."
 date: 2024-03-22
 canonical_url: "https://coolsoftware.dev/blog/march-madness-expo-walterpicks-cross-post/"
