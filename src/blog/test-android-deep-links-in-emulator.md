@@ -2,7 +2,7 @@
 layout: post
 title: "How to test deep links in Android Emulator"
 tags: ["post"]
-description: "adb -s emulator-[number] shell am start -W -a android.intent.action.VIEW -d "your://link/here"
+description: 'adb -s emulator-[number] shell am start -W -a android.intent.action.VIEW -d "your://link/here"'
 date: 2024-04-02
 canonical_url: "https://coolsoftware.dev/blog/test-android-deep-links-in-emulator/"
 highlight: React Native
