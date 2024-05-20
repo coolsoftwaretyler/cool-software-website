@@ -8,13 +8,13 @@ canonical_url: "https://coolsoftware.dev/leetcode-find-all-numbers-disappeared-i
 highlight: LeetCode
 ---
 
+Originally published as a [solution on LeetCode](https://leetcode.com/problems/find-all-numbers-disappeared-in-an-array/solutions/1212505/o-n-constant-space-javascript-solution-with-explanation/)
+
 ## Problem
 
 Given an array `nums` of `n` integers where `nums[i]` is in the range `[1, n]`, return an array of all the integers in the range `[1, n] `that do not appear in `nums`.
 
 ## Explanation
-
-Originally published as a [solution on LeetCode](https://leetcode.com/problems/find-all-numbers-disappeared-in-an-array/solutions/1212505/o-n-constant-space-javascript-solution-with-explanation/)
 
 So the trick here is that the input array is as long as the set of numbers we want to have in there.
 
