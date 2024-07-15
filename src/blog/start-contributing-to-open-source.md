@@ -2,7 +2,7 @@
 layout: post
 title:  "Blog post with Codecademy: Start Contributing to Open Source"
 tags: ['post']
-description: "Just a celebratory post about my article on CSS Tricks"
+description: "Just a celebratory post about my article on Codecademy"
 date: 2024-07-09
 canonical_url: 'https://coolsoftware.dev/start-contributing-to-open-source/'
 highlight: Open Source
