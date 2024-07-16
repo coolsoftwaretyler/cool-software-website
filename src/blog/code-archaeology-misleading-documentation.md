@@ -3,7 +3,7 @@ layout: post
 title:  "Code Archaeology and Misleading Docs"
 tags: ['post']
 description: "Sometimes being a maintainer makes you confidently wrong in a way that's hard to fix"
-date: 2024-07-14
+date: 2024-07-16
 canonical_url: 'https://coolsoftware.dev/expert-in-outdated-minutiae'
 highlight: Open Source
 ---
