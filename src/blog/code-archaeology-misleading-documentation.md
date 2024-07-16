@@ -8,7 +8,7 @@ canonical_url: 'https://coolsoftware.dev/expert-in-outdated-minutiae'
 highlight: Open Source
 ---
 
-I'm an open source maintainer of a project that I didn't invent, didn't build initially, and didn't write the documentation for. I became a maintainer by answering a ton of questions in the [GitHub Discussions](https://github.com/mobxjs/mobx-state-tree/discussions), on Twitter, and in various Slack and Discord groups. So what I really brought to the table was:
+I'm an open source maintainer of [MobX-State-Tree](https://mobx-state-tree.js.org/intro/welcome), a project that I didn't invent, didn't build initially, and didn't write the documentation for. I became a maintainer by answering a ton of questions in the [GitHub Discussions](https://github.com/mobxjs/mobx-state-tree/discussions), on Twitter, and in various Slack and Discord groups. So what I really brought to the table was:
 
 1. A ton of energy and interest in helping people understand and use MobX-State-Tree
 2. A bunch of time invested in reading documentation, old issues, and the source code of the library.
